@@ -126,7 +126,7 @@ div#container > div > * {
   background: #400;
 }
 
-.queueitem::after{
+.queueitem .label::after{
   position: absolute;
   left: 10px;
   top: 50%;
