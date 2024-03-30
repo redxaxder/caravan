@@ -1,31 +1,33 @@
-.label[text]::before {
+.label[icon]::before {
   display: inline-block;
   height: 15px;
   width: 15px;
+  line-height: 100%;
   vertical-align: middle;
-}
-.label[text="Jewelry"]::before { content: url("svg/pearl-necklace.svg"); }
-.label[text="Spices"]::before { content: url("svg/powder-bag.svg"); }
-.label[text="Fabric"]::before { content: url("svg/blanket.svg"); }
-.label[text="Pottery"]::before { content: url("svg/porcelain-vase.svg"); }
-.label[text="Gold"]::before { content: url("svg/gold-nuggets.svg"); }
-.label[text="Rugs"]::before { content: url("svg/rolled-cloth.svg"); }
-.label[text="Wool"]::before { content: url("svg/wire-coil.svg"); }
-.label[text="Lumber"]::before { content: url("svg/wood-pile.svg"); }
-.label[text="Medicine"]::before { content: url("svg/caduceus.svg"); }
-.label[text="Books"]::before { content: url("svg/book-pile.svg"); }
-.label[text="Marble"]::before { content: url("svg/stone-tablet.svg"); }
-.label[text="Iron"]::before { content: url("svg/metal-bar.svg"); }
-.label[text="Wine"]::before { content: url("svg/barrel.svg"); }
-.label[text="Salt"]::before { content: url("svg/powder.svg"); }
-.label[text="Coal"]::before { content: url("svg/stone-pile.svg"); }
-.label[text="Clay"]::before { content: url("svg/brick-pile.svg"); }
-.label[text="Money"]::before { content: url("svg/money-stack.svg"); }
-
-.label[text="Arrow"]::before {
-  content: " ⇒ ";
+  margin: 0px;
 }
 
-.compact .label[text]::after {
-  content: none;
+.label[icon="Jewelry"]::before { content: url("svg/pearl-necklace.svg"); }
+.label[icon="Spices"]::before { content: url("svg/powder-bag.svg"); }
+.label[icon="Fabric"]::before { content: url("svg/blanket.svg"); }
+.label[icon="Pottery"]::before { content: url("svg/porcelain-vase.svg"); }
+.label[icon="Gold"]::before { content: url("svg/gold-nuggets.svg"); }
+.label[icon="Rugs"]::before { content: url("svg/rolled-cloth.svg"); }
+.label[icon="Wool"]::before { content: url("svg/wire-coil.svg"); }
+.label[icon="Lumber"]::before { content: url("svg/wood-pile.svg"); }
+.label[icon="Medicine"]::before { content: url("svg/caduceus.svg"); }
+.label[icon="Books"]::before { content: url("svg/book-pile.svg"); }
+.label[icon="Marble"]::before { content: url("svg/stone-tablet.svg"); }
+.label[icon="Iron"]::before { content: url("svg/metal-bar.svg"); }
+.label[icon="Wine"]::before { content: url("svg/barrel.svg"); }
+.label[icon="Salt"]::before { content: url("svg/powder.svg"); }
+.label[icon="Coal"]::before { content: url("svg/stone-pile.svg"); }
+.label[icon="Clay"]::before { content: url("svg/brick-pile.svg"); }
+.label[icon="Money"]::before { content: url("svg/money-stack.svg"); }
+
+.label[icon="Arrow"]::before {
+  content: "⇒ ";
+  margin-left: 5px;
+  margin-right: 5px;
 }
+
