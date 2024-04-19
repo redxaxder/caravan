@@ -1,4 +1,21 @@
 @import url("goods.css");
+@import url("fontawesome-free-6.4.0-web/css/solid.css");
+
+.button[icon="PlayPause"]::before {
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font: var(--fa-font-solid);
+}
+/* pause */
+.button[icon="PlayPause"]::before {
+  content: "\f04c";
+}
+
+/* play */
+.paused .button[icon="PlayPause"]::before {
+  content: "\f04b";
+}
+
 
 body {
   background: #000;
@@ -18,6 +35,12 @@ body {
   font-size: 16px;
   margin-right: 3px;
   margin-left: 3px;
+}
+
+#centercontrols {
+  display: flex;
+  align-items: center;
+  text-align: center;
 }
 
 div#container > div {
@@ -95,16 +118,6 @@ div#container > div > * {
   min-width: 300px;
 }
 
-/*
-// .queueitem:nth-child(2n+1) {
-//   --progress-color: #3c3836;
-//   --background: #222;
-// }
-// .queueitem:nth-child(2n) {
-//   --progress-color: #332f2d;
-//   --background: #000;
-// }
-*/
 
 .queueitem {
   --progress-color: #332f2d;
@@ -124,26 +137,15 @@ div#container > div > * {
   background: #400;
 }
 
+/*
 .queueitem .label::after{
   position: absolute;
   left: 10px;
   top: 50%;
   transform: translateY(-50%);
 }
+*/
 
-.queueitem .label{
-  text-align: left;
-  line-height: 100%;
-}
-
-.queueitem .label::before{
-  margin: 0px;
-}
-
-.queueitem .label[text="Arrow"]::before{
-  margin-left: 5px;
-  margin-right: 5px;
-}
 
 /*
 .queueitem .button::after {
@@ -184,11 +186,6 @@ div#container > div > * {
   vertical-align: middle;
 }
 
-.button .label[text="Arrow"]::before {
-  margin-left: 5px;
-  margin-right: 5px;
-}
-
 .button:hover {
   transition: all 300ms 0ms;
   color: red;
@@ -200,10 +197,6 @@ div#container > div > * {
   transform: translateX(2px) translateY(2px);
   opacity: 60%;
   box-shadow: none;
-}
-
-#actionlist {
-  line-height: 0;
 }
 
 #actionlist .button {

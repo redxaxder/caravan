@@ -5,6 +5,7 @@
   line-height: 100%;
   vertical-align: middle;
   margin: 0px;
+  margin-bottom: 3px;
 }
 
 .label[icon="Jewelry"]::before { content: url("svg/pearl-necklace.svg"); }
@@ -25,9 +26,11 @@
 .label[icon="Clay"]::before { content: url("svg/brick-pile.svg"); }
 .label[icon="Money"]::before { content: url("svg/money-stack.svg"); }
 
+
 .label[icon="Arrow"]::before {
   content: "⇒ ";
   margin-left: 5px;
   margin-right: 5px;
 }
+
 
