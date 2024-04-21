@@ -3,34 +3,108 @@
   height: 15px;
   width: 15px;
   line-height: 100%;
-  vertical-align: middle;
-  margin: 0px;
-  margin-bottom: 3px;
+  vertical-align: bottom;
+  text-align: center;
+  margin-bottom: 5px;
+  margin-left: 2px;
+  margin-right: 2px;
+  font: var(--fa-font-solid);
 }
 
-.label[icon="Jewelry"]::before { content: url("svg/pearl-necklace.svg"); }
-.label[icon="Spices"]::before { content: url("svg/powder-bag.svg"); }
-.label[icon="Fabric"]::before { content: url("svg/blanket.svg"); }
-.label[icon="Pottery"]::before { content: url("svg/porcelain-vase.svg"); }
-.label[icon="Gold"]::before { content: url("svg/gold-nuggets.svg"); }
-.label[icon="Rugs"]::before { content: url("svg/rolled-cloth.svg"); }
-.label[icon="Wool"]::before { content: url("svg/wire-coil.svg"); }
-.label[icon="Lumber"]::before { content: url("svg/wood-pile.svg"); }
-.label[icon="Medicine"]::before { content: url("svg/caduceus.svg"); }
-.label[icon="Books"]::before { content: url("svg/book-pile.svg"); }
-.label[icon="Marble"]::before { content: url("svg/stone-tablet.svg"); }
-.label[icon="Iron"]::before { content: url("svg/metal-bar.svg"); }
-.label[icon="Wine"]::before { content: url("svg/barrel.svg"); }
-.label[icon="Salt"]::before { content: url("svg/powder.svg"); }
-.label[icon="Coal"]::before { content: url("svg/stone-pile.svg"); }
-.label[icon="Clay"]::before { content: url("svg/brick-pile.svg"); }
-.label[icon="Money"]::before { content: url("svg/money-stack.svg"); }
+
+ /* .label[icon="Jewelry"]::before { content: url("svg/pearl-necklace.svg"); } */
+.label[icon="Jewelry"]::before { content: "\f3a5"; }
+
+/* .label[icon="Spices"]::before { content: url("svg/powder-bag.svg"); } */
+.label[icon="Spices"]::before { content: "\e2eb"; }
+
+/* .label[icon="Fabric"]::before { content: url("svg/blanket.svg"); }
+// https://fontawesome.com/icons/tape?f=classic&s=solid
+// https://fontawesome.com/icons/layer-group?f=classic&s=solid
+ */
+.label[icon="Fabric"]::before { content: "\f4db"; }
+
+/* .label[icon="Pottery"]::before { content: url("svg/porcelain-vase.svg"); } 
+https://fontawesome.com/icons/wine-bottle?f=classic&s=solid
+// https://fontawesome.com/icons/jar?f=classic&s=solid */
+.label[icon="Pottery"]::before { content: "\f72f"; }
+
+/* .label[icon="Gold"]::before { content: url("svg/gold-nuggets.svg"); } 
+ *https://fontawesome.com/icons/land-mine-on?f=classic&s=solid
+// https://fontawesome.com/icons/grip?f=classic&s=solid */
+.label[icon="Gold"]::before { content: "\e51b"; }
+
+/* .label[icon="Rugs"]::before { content: url("svg/rolled-cloth.svg"); } 
+// https://fontawesome.com/icons/rug?f=classic&s=solid
+// https://fontawesome.com/icons/clone?f=classic&s=regular */
+.label[icon="Rugs"]::before { content: "\e569"; }
+
+/* .label[icon="Wool"]::before { content: url("svg/wire-coil.svg"); } 
+// https://fontawesome.com/icons/database?f=classic&s=solid */
+
+.label[icon="Wool"]::before { content: "\f1c0"; }
+
+/* .label[icon="Lumber"]::before { content: url("svg/wood-pile.svg"); }
+ *https://fontawesome.com/icons/lines-leaning?f=classic&s=solid
+// https://fontawesome.com/icons/tree?f=classic&s=solid */
+.label[icon="Lumber"]::before { content: "\e51e"; }
+
+/* .label[icon="Medicine"]::before { content: url("svg/caduceus.svg"); }
+// https://fontawesome.com/icons/kit-medical?f=classic&s=solid */
+.label[icon="Medicine"]::before { content: "\f479"; }
+
+/* .label[icon="Books"]::before { content: url("svg/book-pile.svg"); }
+//https://fontawesome.com/icons/book?f=classic&s=solid */
+.label[icon="Books"]::before { content: "\f02d";}
+
+/* .label[icon="Marble"]::before { content: url("svg/stone-tablet.svg"); }
+https://fontawesome.com/icons/cube?f=classic&s=solid
+// https://fontawesome.com/icons/cubes?f=classic&s=solid
+// https://fontawesome.com/icons/diamond?f=classic&s=solid */
+.label[icon="Marble"]::before { content: "\f1b2"; }
+
+/* .label[icon="Iron"]::before { content: url("svg/metal-bar.svg"); }
+// https://fontawesome.com/icons/ticket-simple?f=classic&s=solid */
+.label[icon="Iron"]::before { content: "\f3ff"; }
+
+/* .label[icon="Wine"]::before { content: url("svg/barrel.svg"); }
+ *https://fontawesome.com/icons/wine-glass?f=classic&s=solid
+// https://fontawesome.com/icons/wine-bottle?f=classic&s=solid */
+.label[icon="Wine"]::before { content: "\f4e3"; }
+
+/* .label[icon="Salt"]::before { content: url("svg/powder.svg"); }
+// https://fontawesome.com/icons/mound?f=classic&s=solid
+// https://fontawesome.com/icons/asterisk?f=classic&s=solid */
+.label[icon="Salt"]::before { content: "\e52d"; }
+
+/* .label[icon="Coal"]::before { content: url("svg/stone-pile.svg"); }
+//https://fontawesome.com/icons/hill-rockslide?f=classic&s=solid */
+.label[icon="Coal"]::before { content: "\e508"; }
+
+/* .label[icon="Clay"]::before { content: url("svg/brick-pile.svg"); }
+// https://fontawesome.com/icons/cubes-stacked?f=classic&s=solid */
+.label[icon="Clay"]::before { content: "\e4e6"; }
+
+/* .label[icon="Money"]::before { content: url("svg/money-stack.svg"); }
+// https://fontawesome.com/icons/sack-dollar?f=classic&s=solid
+// https://fontawesome.com/icons/money-bill-wave?f=classic&s=solid */
+
+.label[icon="Money"]::before { content: "\f51e"; }
+
+.label[icon="Taxes"]::before { content: "\f521"; }
 
 
+/*
+// https://fontawesome.com/icons/arrow-right?f=classic&s=solid
+// https://fontawesome.com/icons/arrow-right-long?f=classic&s=solid
+// https://fontawesome.com/icons/right-long?f=classic&s=solid
+f30b
+*/
 .label[icon="Arrow"]::before {
-  content: "⇒ ";
-  margin-left: 5px;
-  margin-right: 5px;
+  content: "⇒";
+  margin-left: 10px;
+  margin-right: 8px;
+  margin-bottom: 8px;
 }
 
 
