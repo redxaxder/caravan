@@ -21,6 +21,7 @@
   font: var(--fa-font-regular);
 }
 
+
 body {
   background: #000;
   color: #fff;
@@ -41,14 +42,19 @@ body {
   margin-left: 3px;
 }
 
+#centerpane {
+  flex-grow: 1000;
+}
 #centercontrols {
   display: flex;
+  min-width: 300px;
   align-items: center;
   text-align: center;
 }
 
 div#container > div {
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-start;
 }
 
@@ -72,8 +78,8 @@ div#container > div > * {
 }
 
 #resourcelist {
-  width: 25%;
-  min-width: 280px;
+  flex-basis: 300px;
+  flex-grow: 1;
 }
 
 #resourcelist > :nth-child(2n+1) {
@@ -104,18 +110,75 @@ div#container > div > * {
   -ms-user-select: none;
   user-select: none;
   background-color: #fff0;
-  min-width: 15px;
+  min-width: 16px;
   padding: 4px;
   display: inline-block;
   text-rendering: auto;
   text-align: center;
+  vertical-align: center;
+  align-items: center;
   border-radius: 15px;
   transition: all 0 0;
 }
 
+.button.label[icon] {
+  width: 16px;
+  height: 16px;
+}
+
+.button {
+  overflow: visible;
+}
+
+.tooltip {
+  display: inline-flex !important;
+  flex-direction: column;
+  visibility: hidden;
+  position: absolute !important;
+  border: 5px solid #66a;
+  color: #aaf;
+  padding: 3px;
+  background-color: #000;
+  z-index: 1;
+  left: 50%;
+  top: 70%;
+  width: 0%;
+  overflow-x: clip;
+  overflow-y: visible;
+  pointer-events: none;
+}
+
+.tooltip .divider {
+  border: 1px solid #66a;
+  margin: 3px;
+  width: calc(100% -6px);
+  height: 0px;
+}
+
+
+.tooltip::before {
+  content: "";
+  border: 12px solid transparent;
+  border-bottom-color: #66a;
+  width: calc(40% - 24px); height: 0px;
+  position: absolute;
+  left: calc(30%);
+  top: calc(-26px);
+}
+
+
+
+div:hover > .tooltip {
+  transition: all 0.2s;
+  visibility: visible;
+  left: calc(-20px);
+  top: calc(100% + 13px);
+  width: calc(100% - 10px + 40px);
+}
+
 .queue {
   border: 1px solid #aaa;
-  width: 300px;
+  min-width: 300px;
   height: 400px;
   overflow: scroll;
   scroll-behavior: smooth;
@@ -195,23 +258,28 @@ div#container > div > * {
   transition: all 300ms 0ms;
   color: #aaf;
   border-color: #aaf;
-  background-color: #aaf3;
+  background-color: #224;
 }
 
 .button:active {
   transition: none;
-  transform: translateX(2px) translateY(2px);
-  opacity: 60%;
+  color: #aaf6;
+  border-color: #aaf6;
+  background-color: #2246;
   box-shadow: none;
 }
 
+#actionlist {
+  flex-basis: 350px;
+  flex-grow: 1000000;
+}
 #actionlist .button {
   min-width: 200px;
   min-height: 50px;
   line-height: 50px;
   border-style: solid;
   position: relative;
-  margin: 4px 4px 0 0;
+  margin: 2px 2px 2px 2px;
 }
 
 .hide-empty:empty, .inactive {

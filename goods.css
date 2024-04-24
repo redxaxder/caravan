@@ -1,19 +1,29 @@
 .label[icon]::before {
   display: inline-block;
-  height: 15px;
-  width: 15px;
+  height: 16px;
+  width: 16px;
   line-height: 100%;
-  vertical-align: bottom;
+  vertical-align: center;
   text-align: center;
-  margin-bottom: 5px;
-  margin-left: 2px;
-  margin-right: 2px;
   font: var(--fa-font-solid);
 }
 
+.queue .label[icon]::before {
+  margin-bottom: 5px;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+#actionlist .label[icon]::before {
+  margin-bottom: 5px;
+  margin-left: 2px;
+  margin-right: 2px;
+}
 
  /* .label[icon="Jewelry"]::before { content: url("svg/pearl-necklace.svg"); } */
-.label[icon="Jewelry"]::before { content: "\f3a5"; }
+.label[icon="Jewelry"]::before {
+  font: var(--fa-font-regular);
+  content: "\f3a5";
+}
 
 /* .label[icon="Spices"]::before { content: url("svg/powder-bag.svg"); } */
 .label[icon="Spices"]::before { content: "\e2eb"; }
@@ -93,6 +103,8 @@ https://fontawesome.com/icons/cube?f=classic&s=solid
 
 .label[icon="Taxes"]::before { content: "\f521"; }
 
+.label[icon="Total"]::before { content: "\f0ca"; }
+.label[icon="Limit"]::before { content: "\f00b"; }
 
 /*
 // https://fontawesome.com/icons/arrow-right?f=classic&s=solid
