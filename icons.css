@@ -13,7 +13,7 @@
   margin-left: 2px;
   margin-right: 2px;
 }
-#actionlist .label[icon]::before {
+#actionlist > .button .label[icon]::before {
   margin-bottom: 5px;
   margin-left: 2px;
   margin-right: 2px;
@@ -74,8 +74,9 @@ https://fontawesome.com/icons/cube?f=classic&s=solid
 .label[icon="Marble"]::before { content: "\f1b2"; }
 
 /* .label[icon="Iron"]::before { content: url("svg/metal-bar.svg"); }
+// https://fontawesome.com/icons/weight-hanging?f=classic&s=solid
 // https://fontawesome.com/icons/ticket-simple?f=classic&s=solid */
-.label[icon="Iron"]::before { content: "\f3ff"; }
+.label[icon="Iron"]::before { content: "\f5cd"; }
 
 /* .label[icon="Wine"]::before { content: url("svg/barrel.svg"); }
  *https://fontawesome.com/icons/wine-glass?f=classic&s=solid
@@ -100,11 +101,25 @@ https://fontawesome.com/icons/cube?f=classic&s=solid
 // https://fontawesome.com/icons/money-bill-wave?f=classic&s=solid */
 
 .label[icon="Money"]::before { content: "\f51e"; }
-
+.label[icon="Reputation"]::before { content: "\f005"; }
 .label[icon="Taxes"]::before { content: "\f521"; }
 
 .label[icon="Total"]::before { content: "\f0ca"; }
 .label[icon="Limit"]::before { content: "\f00b"; }
+
+
+.label[icon="Tent"]::before { content: "\e57d"; }
+.label[icon="Shop"]::before { content: "\f54f"; }
+.label[icon="Slum"]::before { content: "\f594"; }
+.label[icon="Landmark"]::before { content: "\f66f"; }
+.label[icon="Gate"]::before { content: "\f557"; }
+
+.label[icon="Labor"]::before { content: "\f85e"; }
+.label[icon="Buy"]::before { content: "\f4c0"; }
+.label[icon="Sell"]::before { content: "\f81d"; }
+.label[icon="Exchange"]::before { content: "\f4c4"; }
+.label[icon="Travel"]::before { content: "\f54b"; }
+
 
 /*
 // https://fontawesome.com/icons/arrow-right?f=classic&s=solid
